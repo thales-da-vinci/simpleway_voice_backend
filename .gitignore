@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.wav
+*.mp3
+static/output/*
+!static/output/.gitkeep
+models/
+*.log
+.env

@@ -1,0 +1,6 @@
+flask
+TTS
+vosk
+soundfile
+numpy
+gunicorn
