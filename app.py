@@ -6,10 +6,12 @@ from vosk_stt import recognize_speech
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/healthz')
 def home():
     return jsonify({
         "status": "SimpleWay Voice Engine ativo 🕯️",
-        "python_version": sys.version
+        "python_version": sys.version,
+        "health": "ok"
     })
 
 @app.route('/speak', methods=['POST'])
